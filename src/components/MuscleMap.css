@@ -1,0 +1,51 @@
+.muscle-map-container {
+    background-color: #1e1e1e; /* dark gray background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #f1f1f1;
+  }
+  
+  .muscle-map-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff595e; /* accent color */
+  }
+  
+  .muscle-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 89, 94, 0.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .muscle-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .sub-muscle-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .sub-muscle-button {
+    background-color: #333;
+    color: #f1f1f1;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sub-muscle-button:hover {
+    background-color: #444;
+  }
+  
