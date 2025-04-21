@@ -1,0 +1,23 @@
+.muscle-detail-container {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .muscle-detail-container h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .muscle-detail-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .muscle-detail-container li {
+    margin: 5px 0;
+  }
+  
