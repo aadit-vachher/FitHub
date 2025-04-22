@@ -5,6 +5,7 @@ import MainApp from './components/Main';
 function App() {
   return (
   <MainApp />
+  
 )
 }
 

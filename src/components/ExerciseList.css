@@ -1,0 +1,37 @@
+.exercise-list {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .exercise-list h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #00ffd5;
+  }
+  
+  .exercise-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .exercise-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    transition: background 0.2s;
+  }
+  
+  .exercise-list li:hover {
+    background-color: #2a2a2a;
+    cursor: pointer;
+  }
+  

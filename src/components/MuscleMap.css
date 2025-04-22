@@ -1,5 +1,5 @@
 .muscle-map-container {
-    background-color: #1e1e1e; /* dark gray background */
+    background-color: #1e1e1e; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
   .muscle-map-title {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff595e; /* accent color */
+    color: #ff595e; 
   }
   
   .muscle-image {

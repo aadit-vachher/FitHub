@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import Login from './Login';
-import MuscleMap from './MuscleMap'; // You'll build this next
+import MuscleMap from './MuscleMap'; 
+import Header from './Header';
 
 const MainApp = () => {
   const [currentPage, setCurrentPage] = useState('login');
 
   const handleLogin = () => {
-    // After successful login
+
     setCurrentPage('muscleMap');
   };
 
   return (
     <>
+      <Header />
       {currentPage === 'login' && <Login onLogin={handleLogin} />}
       {currentPage === 'muscleMap' && <MuscleMap />}
+      
     </>
   );
 };

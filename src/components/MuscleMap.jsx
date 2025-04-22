@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
 import './MuscleMap.css';
-import MuscleDetail from './MuscleDetail'; 
+
+import ExerciseList from './ExerciseList';
 
 const MuscleMap = () => {
   const [selectedMuscle, setSelectedMuscle] = useState(null);
+  const exercises = {
+    Biceps: ['Barbell Curl', 'Hammer Curl', 'Concentration Curl'],
+    Triceps: ['Tricep Dips', 'Overhead Tricep Extension', 'Tricep Pushdown'],
+    Chest: ['Bench Press', 'Push-ups', 'Incline Dumbbell Press'],
+    Back: ['Deadlifts', 'Pull-ups', 'Bent Over Rows'],
+    Legs: ['Squats', 'Lunges', 'Leg Press'],
+  };
+  
 
   const handleMuscleClick = (muscle) => {
     setSelectedMuscle(muscle);
@@ -12,7 +21,7 @@ const MuscleMap = () => {
   return (
     <div className="muscle-map-container">
       <h2 className="muscle-map-title">Select a Muscle</h2>
-      <img src="/muscle-map.svg" alt="Muscle Map" className="muscle-image" />
+      <img src="../public/muscle-map.svg" alt="Muscle Map" className="muscle-image" />
       
       <div className="sub-muscle-buttons">
         <button className="sub-muscle-button" onClick={() => handleMuscleClick('Biceps')}>Biceps</button>
@@ -23,7 +32,9 @@ const MuscleMap = () => {
       </div>
 
 
-      {selectedMuscle && <MuscleDetail muscle={selectedMuscle} />}
+      {selectedMuscle && (
+  <ExerciseList muscle={selectedMuscle} exercises={exercises} />
+)}
     </div>
   );
 };
