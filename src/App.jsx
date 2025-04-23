@@ -1,12 +1,22 @@
-import React from 'react';
 
-import MainApp from './components/Main';
 
-function App() {
+
+import React, { useState } from 'react';
+import Login from './components/Login';
+import Main from './components/Main';
+
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
   return (
-  <MainApp />
-  
-)
-}
+    <>
+      {isLoggedIn ? <Main /> : <Login onLogin={handleLogin} />}
+    </>
+  );
+};
 
 export default App;

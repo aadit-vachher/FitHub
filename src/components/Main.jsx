@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
-import Login from './Login';
-import MuscleMap from './MuscleMap'; 
+import React from 'react';
 import Header from './Header';
-
-const MainApp = () => {
-  const [currentPage, setCurrentPage] = useState('login');
-
-  const handleLogin = () => {
-
-    setCurrentPage('muscleMap');
-  };
-
+import MuscleMap from './MuscleMap'; 
+const Main = () => {
   return (
-    <>
+    <div>
       <Header />
-      {currentPage === 'login' && <Login onLogin={handleLogin} />}
-      {currentPage === 'muscleMap' && <MuscleMap />}
-      
-    </>
+      <MuscleMap />
+    </div>
   );
 };
 
-export default MainApp;
+export default Main;
+
