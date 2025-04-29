@@ -1,6 +1,8 @@
+@import './colors.css';
+
 .header {
-  background-color: #111; 
-  color: #fff;
+  background-color: var(--secondary-bg);
+  color: var(--text-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,6 +11,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  backdrop-filter: blur(6px);
 }
 
 .logo {
@@ -18,8 +21,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #00e676; 
+  color: var(--accent);
   transition: transform 0.2s ease;
+  text-shadow: 0 0 5px var(--accent);
 }
 
 .logo:hover {
@@ -32,11 +36,13 @@
 }
 
 .nav-links a {
-  color: #ccc;
+  color: var(--text-muted);
   text-decoration: none;
   font-size: 1rem;
   position: relative;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 4px 8px;
+  border-radius: 6px;
 }
 
 .nav-links a::after {
@@ -44,14 +50,16 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #00e676;
+  background-color: var(--accent);
   bottom: -4px;
   left: 0;
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #fff;
+  color: rgb(0, 225, 255);
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .nav-links a:hover::after {

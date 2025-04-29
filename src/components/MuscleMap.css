@@ -1,52 +1,59 @@
+@import './colors.css';
+
 .muscle-map-container {
-    background-color: #1e1e1e; 
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: #f1f1f1;
-  }
-  
-  .muscle-map-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #ff595e; 
-  }
-  
-  .muscle-image {
-    max-width: 500px;
-    width: 50%;
-    height: auto;
-    border: 2px solid #333;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(255, 89, 94, 0.4);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .muscle-image:hover {
-    transform: scale(1.02);
-  }
-  
-  .sub-muscle-buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .sub-muscle-button {
-    background-color: #333;
-    color: #f1f1f1;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sub-muscle-button:hover {
-    background-color: #444;
-  }
-  
+  background-color: var(--main-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: var(--text-light);
+}
+
+.muscle-map-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--accent);
+  text-shadow: 0 0 6px rgba(255, 89, 94, 0.5);
+}
+
+.muscle-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--text-muted);
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(0, 204, 255, 0.757);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.muscle-image:hover {
+  transform: scale(1.03);
+}
+
+.sub-muscle-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sub-muscle-button {
+  background-color: #282828;
+  color: var(--text-light);
+  border: 1px solid var(--accent);
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sub-muscle-button:hover {
+  background-color: var(--accent);
+  color: #111;
+  transform: translateY(-2px);
+}
