@@ -12,7 +12,7 @@ const stretchingExercises = {
   ],
   Hamstrings: [   
     { name: 'Standing Hamstring Stretch', videoUrl: 'https://www.youtube.com/embed/Eg6M42FgDF4' },
-    // { name: 'Seated Hamstring Stretch', videoUrl: 'https://www.youtube.com/embed/IWHm2wnIoUY' },
+
   ],
   Shoulders: [
     { name: 'Cross-body Shoulder Stretch', videoUrl: 'https://www.youtube.com/embed/swvXpKN832E' },

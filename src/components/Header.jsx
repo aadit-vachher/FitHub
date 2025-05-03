@@ -9,7 +9,7 @@ const Header = ({ setCurrentPage, handleLogout }) => {
         className="logo"
         onClick={(e) => {
           e.preventDefault();
-          handleLogout();  // Logs out when logo is clicked
+          handleLogout();  
         }}
       >
         🏋️‍♂️ FitTrack
@@ -20,7 +20,7 @@ const Header = ({ setCurrentPage, handleLogout }) => {
           href="#home"
           onClick={(e) => {
             e.preventDefault();
-            setCurrentPage('home');  // New: Go back to home
+            setCurrentPage('home');  
           }}
         >
           Home
