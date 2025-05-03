@@ -1,0 +1,48 @@
+.stretching-container {
+    padding: 40px;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    min-height: 100vh;
+  }
+  
+  .stretching-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00d5ff;
+    text-align: center;
+  }
+  
+  .stretching-section {
+    margin-bottom: 40px;
+  }
+  
+  .stretching-area {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #b61010;
+  }
+  
+  .stretching-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .stretching-item {
+    background-color: #292929;
+    padding: 16px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 213, 255, 0.1);
+  }
+  
+  .exercise-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .video-wrapper iframe {
+    border-radius: 8px;
+    border: none;
+  }
+  
