@@ -5,15 +5,15 @@ import './App.css';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [currentPage, setCurrentPage] = useState('home'); // add this for navigation
+  const [currentPage, setCurrentPage] = useState('home');
 
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
 
   const handleLogout = () => {
-    setIsLoggedIn(false);   // Logs out
-    setCurrentPage('home'); // Optional: reset page to home too
+    setIsLoggedIn(false);
+    setCurrentPage('home');
   };
 
   return (

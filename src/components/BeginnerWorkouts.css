@@ -1,0 +1,69 @@
+.beginner-workouts {
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+    padding: 40px 20px;
+    color: #f1f1f1;
+    min-height: 100vh;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00d5ff;
+    margin-bottom: 30px;
+  }
+  
+  .workout-category {
+    margin-bottom: 40px;
+  }
+  
+  .workout-category h3 {
+    font-size: 1.8rem;
+    color: #b61010;
+    margin-bottom: 20px;
+  }
+  
+  .exercise-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .exercise-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .exercise-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .exercise-card h4 {
+    margin-bottom: 10px;
+    color: #00d5ff;
+  }
+  
+  .pro-tip {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pro-tip h4 {
+    margin-bottom: 10px;
+    color: #00d5ff;
+  }
+  
+  .pro-tip p {
+    color: #ddd;
+  }
+  

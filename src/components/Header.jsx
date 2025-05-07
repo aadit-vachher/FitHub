@@ -5,11 +5,11 @@ const Header = ({ setCurrentPage, handleLogout }) => {
   return (
     <header className="header">
       <a
-        href="/"
+        href="#"
         className="logo"
         onClick={(e) => {
           e.preventDefault();
-          handleLogout();  
+          setCurrentPage('home');
         }}
       >
         🏋️‍♂️ FitTrack
@@ -20,7 +20,7 @@ const Header = ({ setCurrentPage, handleLogout }) => {
           href="#home"
           onClick={(e) => {
             e.preventDefault();
-            setCurrentPage('home');  
+            setCurrentPage('home');
           }}
         >
           Home
@@ -51,6 +51,15 @@ const Header = ({ setCurrentPage, handleLogout }) => {
           }}
         >
           Beginner Workouts
+        </a>
+        <a
+          href="#logout"
+          onClick={(e) => {
+            e.preventDefault();
+            handleLogout();
+          }}
+        >
+          Logout
         </a>
       </nav>
     </header>

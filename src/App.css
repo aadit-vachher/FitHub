@@ -45,12 +45,3 @@
 
 
 
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: radial-gradient(circle at top left, rgba(0,213,255,0.08), transparent),
-              radial-gradient(circle at bottom right, rgba(182,16,16,0.08), transparent),
-              linear-gradient(135deg, #111, #1e1e1e);
-  color: #f0f0f0;
-}
