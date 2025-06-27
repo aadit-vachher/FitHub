@@ -74,12 +74,17 @@ body, html {
   transform: translateY(-2px);
 }
 
-/* .signup-btn {
-  background-color: #333;
-  color: white;
-}
 
-.signup-btn:hover {
-  background-color: #444;
-  transform: translateY(-2px);
-} */
+
+
+@media (max-width: 768px) {
+  .login-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .login-btn, .signup-btn {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+}

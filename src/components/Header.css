@@ -65,3 +65,35 @@
 .nav-links a:hover::after {
   width: 100%;
 }
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}
