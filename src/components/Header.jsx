@@ -35,15 +35,6 @@ const Header = ({ setCurrentPage, handleLogout }) => {
           Stretch & Recovery
         </a>
         <a
-          href="#askai"
-          onClick={(e) => {
-            e.preventDefault();
-            setCurrentPage('askai');
-          }}
-        >
-          Ask AI
-        </a>
-        <a
           href="#beginner"
           onClick={(e) => {
             e.preventDefault();
