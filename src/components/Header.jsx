@@ -44,6 +44,15 @@ const Header = ({ setCurrentPage, handleLogout }) => {
           Beginner Workouts
         </a>
         <a
+          href="#askai"
+          onClick={(e) => {
+            e.preventDefault();
+            setCurrentPage('askai');
+          }}
+        >
+          Ask AI
+        </a>
+        <a
           href="#logout"
           onClick={(e) => {
             e.preventDefault();
