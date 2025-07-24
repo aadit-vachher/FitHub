@@ -26,11 +26,11 @@ const BeginnerWorkouts = () => {
   return (
     <div className="beginner-workouts">
       <h2 className="section-title">Beginner Workouts</h2>
-      {Object.keys(beginnerWorkouts).map((category, index) => (
+      {Object.keys(beginnerWorkouts).map((cat, index) => (
         <div key={index} className="workout-category">
-          <h3>{category}</h3>
+          <h3>{cat}</h3>
           <div className="exercise-cards">
-            {beginnerWorkouts[category].map((exercise, idx) => (
+            {beginnerWorkouts[cat].map((exercise, idx) => (
               <div key={idx} className="exercise-card">
                 <h4>{exercise.name}</h4>
                 <iframe

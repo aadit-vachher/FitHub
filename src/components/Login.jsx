@@ -9,7 +9,6 @@ const Login = ({ onLogin }) => {
         <input type="text" placeholder="Username" />
         <input type="password" placeholder="Password" />
         <button className="login-btn" onClick={onLogin}>Login</button>
-        {/* <button className="signup-btn">Create an Account</button> */}
       </div>
     </div>
   );
