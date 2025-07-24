@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AskAI.css';
 
-const GEMINI_API_KEY = 'AIzaSyCT9ICinH32t5c0LiZSqNzZvN72oUnWZow';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 const AskAI = () => {
   const [question, setQuestion] = useState('');
